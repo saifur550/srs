@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Roboto+Mono:wght@400;700&family=Tourney:wght@500;900&display=swap');
+
+
+:root{
+    --mainFont :'Roboto Mono', monospace;
+    --logoFont :'Tourney', cursive;
+    --otherFont:'Festive', cursive;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+body{
+    height: 100vh;
+    font-family: var(--mainFont);
+    background: linear-gradient(-90deg, #E1701A 70%, #000000 70%);
+}
+
+
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.user__profile img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: .2rem;
+}
+
+span{
+    font-family: var(--logoFont);
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 30px;
+   
+}
+
+h4{
+    color: #333;
+    font-weight: bold;
+    text-align:left;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+}
+
+
+nav{
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    color: #fff;
+}
+
+nav ul li {
+   list-style: none;
+}
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: .2rem 0rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+
+    #content{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+    }
+    .user__profile img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        padding: .2rem;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:375px){
+
+    #content{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%,-50%);
+    }
+
+    .user__profile img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
+        padding: .2rem;
+    }
+}
